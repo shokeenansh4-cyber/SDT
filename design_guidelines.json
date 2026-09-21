@@ -1,0 +1,92 @@
+{
+  "project_name": "SDF — Sandeep Dangi Fitness (India Online Training)",
+  "app_type": "marketing_site / portfolio hybrid (Multi-Page)",
+  "archetype": "THE PERFORMANCE PRO (Elite Athleticism, Tactical Precision & High Energy)",
+  "theme": "Dark Mode Default (Deep Tinted Obsidian #090C10 & Carbon Steel #121720 with Crimson Flame #FF3838 & Volt Amber #FF9F1C accents)",
+  "typography": {
+    "heading_font": "Barlow Condensed, sans-serif (or Bebas Neue / Outfit)",
+    "body_font": "Plus Jakarta Sans, sans-serif (or Inter)",
+    "mono_font": "JetBrains Mono, monospace",
+    "font_pairings": "Barlow Condensed Heavy/Bold for Headlines + Plus Jakarta Sans for Body + JetBrains Mono for stats, badges & metrics",
+    "h1_hero": "text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-none",
+    "h2_section": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight uppercase",
+    "h3_subtitle": "text-xl sm:text-2xl font-semibold tracking-normal text-amber-400",
+    "body_text": "text-base sm:text-lg text-slate-300 leading-relaxed font-normal"
+  },
+  "colors": {
+    "background_dark": "#07090E",
+    "background_card": "#0F141C",
+    "background_card_elevated": "#171F2C",
+    "border_subtle": "rgba(255, 255, 255, 0.08)",
+    "border_active": "rgba(255, 56, 56, 0.4)",
+    "accent_primary": "#FF3838",
+    "accent_hover": "#E62E2E",
+    "accent_gold": "#FF9F1C",
+    "accent_emerald": "#10B981",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B"
+  },
+  "layout_and_spacing": {
+    "philosophy": "Tactical Asymmetry & High-Impact Grid. Generous 2-3x vertical padding (py-20 to py-32). 1px crisp borders with inner glow.",
+    "container_padding": "px-4 sm:px-8 lg:px-16 max-w-7xl mx-auto",
+    "bento_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8",
+    "hero_overlay": "bg-gradient-to-t from-[#07090E] via-[#07090E]/70 to-transparent",
+    "glassmorphism": "backdrop-blur-xl bg-[#0F141C]/80 border border-white/10 shadow-2xl"
+  },
+  "motion_and_animations": {
+    "kinetic_hero": "Line-by-line staggered reveal using framer-motion (y: 40 -> 0, opacity: 0 -> 1)",
+    "gym_equipment_effects": "Rotating 3D/2D barbell plate motifs in background, subtle dumbbell pulse on hover, pulsing workout energy ring around coach badges",
+    "marquee": "Slow drifting editorial ticker for achievements, certifications, and languages (English, Hindi, Punjabi)",
+    "counters": "Animated key statistics counting up (26+ Years Experience, 5000+ Transformations, NASM Certified)",
+    "scroll_reveals": "Scroll-triggered section reveals with reduced-motion fallback"
+  },
+  "image_urls": {
+    "sandeep_dangi_hero": "https://images.pexels.com/photos/29886673/pexels-photo-29886673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "sandeep_dangi_contest": "https://images.unsplash.com/photo-1610312856669-2cee66b2949c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85",
+    "sandeep_dangi_coaching": "https://images.unsplash.com/photo-1626724419913-ac60f768c20f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85",
+    "sandeep_dangi_physique": "https://images.unsplash.com/photo-1754475172820-6053bbed3b25?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85",
+    "sandeep_dangi_biceps": "https://images.pexels.com/photos/5327538/pexels-photo-5327538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "workout_dumbbell_heavy": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHxfHxmaXRuZXNzJTIwdHJhbnNmb3JtYXRpb24lMjBib2R5YnVpbGRlciUyMHdvcmtvdXQlMjBkdW1iYmVsbCUyMGd5bSUyMGVxdWlwbWVudHxlbnwwfHx8fDE3ODk5NzMxMzN8MA&ixlib=rb-4.1.0&q=85",
+    "workout_barbell_lift": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwyfHxmaXRuZXNzJTIwdHJhbnNmb3JtYXRpb24lMjBib2R5YnVpbGRlciUyMHdvcmtvdXQlMjBkdW1iYmVsbCUyMGd5bSUyMGVxdWlwbWVudHxlbnwwfHx8fDE3ODk5NzMxMzN8MA&ixlib=rb-4.1.0&q=85",
+    "workout_gym_session": "https://images.pexels.com/photos/31849600/pexels-photo-31849600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "indian_meal_prep_1": "https://images.pexels.com/photos/30635714/pexels-photo-30635714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "indian_meal_prep_2": "https://images.pexels.com/photos/30635720/pexels-photo-30635720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "component_structure": {
+    "navigation": "Navbar with Logo, desktop links (HOME, TRANSFORMATIONS, ONLINE COACHING, CONTEST PREP, ABOUT SANDEEP), language badges (EN | HI | PB), and APPLY NOW CTA",
+    "hero_section": "Kinetic headline reveal + high-impact transformation imagery + Apply Now & WhatsApp CTAs + Trust strip (26 yrs exp, 5000+ transformed, NASM certified, Canadian titles)",
+    "proof_marquee": "Horizontal continuous marquee of key mantras & achievement highlights",
+    "credibility_counters": "Interactive 4-stat grid with animated count-up numbers & gold accent badges",
+    "transformations_gallery": "Filterable case studies (Over 35s, Muscle Gain, Fat Loss, Contest Prep) with before/after comparison sliders, metrics (e.g. -18kg in 16 weeks), client profiles, and short audio/quote testimonials",
+    "about_sandeep_story": "Narrative section highlighting 26-year journey, single father story, father's memory promise, Canadian bodybuilding titles, and coaching philosophy (Controlled training, Proper technique, Disciplined nutrition, Honest feedback)",
+    "coaching_features": "4-pillar breakdown: Customized Indian Nutrition, Structured Gym/Home Training, Weekly Video Accountability, WhatsApp VIP Support",
+    "apply_modal": "Multi-step interactive application form (Name, Age, Location, Fitness Goal, Current Weight, WhatsApp Number) with instant confirmation",
+    "floating_whatsapp": "Fixed bottom-right WhatsApp button with quick-chat popup prompt"
+  },
+  "instructions_to_main_agent": [
+    "Build a complete multi-page navigation setup using react-router-dom or tab-based routing (Home, Transformations, Online Coaching, Contest Prep, About Sandeep).",
+    "Ensure ALL interactive elements (buttons, inputs, links, tabs, modal triggers) include a `data-testid` attribute (e.g., data-testid='apply-now-btn', data-testid='whatsapp-chat-btn').",
+    "Include explicit language indicator badges: 'Coaching Available in English, Hindi (हिंदी) & Punjabi (ਪੰਜਾਬੀ)'.",
+    "Use framer-motion for kinetic hero reveal and smooth scroll interactions.",
+    "Do NOT use pure white backgrounds or default Vercel themes; stick strictly to the dark performance pro obsidian palette.",
+    "Implement gym equipment animated motifs (rotating SVG weight plates, pulsing dumbbell icons) in the background and hero section.",
+    "Include Sonner toasts for form submit feedback and copy-to-clipboard interactions.",
+    "Add placeholder WhatsApp action with direct link handler: 'https://wa.me/919876543210?text=Hi%20Sandeep,%20I%20want%20to%20apply%20for%20online%20coaching'."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Exclude transforms from universal transitions.",
+    "You MUST NOT center align the app container (.App { text-align: center; }).",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters (🤖, 🧠, 💭, 💡, 🔮, 🎯) for icons; use lucide-react or phosphor icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom selection states, and loading animations separate good from extraordinary.",
+    "All interactive and key informational elements MUST include a data-testid attribute."
+  ]
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 220 33% 4%;
+        --foreground: 210 40% 98%;
+        --card: 216 30% 8%;
+        --card-foreground: 210 40% 98%;
+        --popover: 216 30% 8%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 2 100% 61%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 217 28% 13%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217 28% 13%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 33 100% 55%;
+        --accent-foreground: 220 33% 4%;
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 100% / 0.08;
+        --input: 217 28% 16%;
+        --ring: 2 100% 61%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-white/10;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+    body {
+        @apply bg-obsidian text-slate-100 font-body;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection {
+        background: #FF3838;
+        color: #fff;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #07090E;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #1E2836;
+        border-radius: 8px;
+        border: 2px solid #07090E;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #FF3838;
+    }
+}
+
+@layer utilities {
+    .text-outline {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.09);
+        color: transparent;
+    }
+    .text-outline-flame {
+        -webkit-text-stroke: 1px rgba(255, 56, 56, 0.28);
+        color: transparent;
+    }
+    .clip-frame {
+        clip-path: polygon(0 0, 100% 4%, 96% 100%, 0% 96%);
+    }
+    .clip-frame-alt {
+        clip-path: polygon(4% 0, 100% 0, 100% 96%, 0 100%);
+    }
+    .grain-overlay {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+}
+
+[data-debug-wrapper="true"] {
+    display: contents !important;
+}
+[data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    border-color: inherit;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
