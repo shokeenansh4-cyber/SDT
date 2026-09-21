@@ -183,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* ============ CHAPTER 02 — THE PROOF ============ */}
-      <section className="relative border-t border-white/10 bg-carbon py-24 sm:py-32" data-testid="home-proof-section">
+      <section className="relative overflow-hidden border-t border-white/10 bg-carbon py-24 sm:py-32" data-testid="home-proof-section">
         <PlateSpinner className="absolute -right-24 top-10 h-80 w-80 text-white/[0.04]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
           <div className="flex flex-wrap items-end justify-between gap-6">

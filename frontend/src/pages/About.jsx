@@ -75,7 +75,7 @@ export default function About() {
 
       <Marquee />
 
-      <section className="relative py-24 sm:py-32" data-testid="about-story-section">
+      <section className="relative overflow-hidden py-24 sm:py-32" data-testid="about-story-section">
         <PlateSpinner className="absolute -left-28 bottom-20 h-80 w-80 text-white/[0.04]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
           <Reveal><ChapterTag num="05" label="The Story" /></Reveal>

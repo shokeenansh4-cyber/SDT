@@ -70,7 +70,7 @@ export default function Coaching() {
         </div>
       </section>
 
-      <section className="border-t border-white/10 bg-carbon py-24 sm:py-28" data-testid="coaching-pillars-section">
+      <section className="relative overflow-hidden border-t border-white/10 bg-carbon py-24 sm:py-28" data-testid="coaching-pillars-section">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
           <Reveal><ChapterTag num="03.1" label="What You Get" /></Reveal>
           <div className="mt-12 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
