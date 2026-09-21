@@ -9,6 +9,7 @@ export const IMAGES = {
   hero: "/assets/sandeep-hero.webp",
   contest: "https://images.unsplash.com/photo-1610312856669-2cee66b2949c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85&w=900&h=1200&fit=crop",
   coaching: "/assets/sandeep-iron.webp",
+  coachingHero: "/assets/sandeep-coaching.webp",
   about: "/assets/sandeep-bg.webp",
   bg: "/assets/sandeep-bg.webp",
   logo: "/assets/sdf-logo-white.png",

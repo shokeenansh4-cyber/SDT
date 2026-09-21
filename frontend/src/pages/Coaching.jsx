@@ -63,7 +63,7 @@ export default function Coaching() {
             className="relative lg:col-span-5"
           >
             <div className="clip-frame-alt overflow-hidden border border-white/10 transition-shadow duration-500 hover:shadow-[0_0_60px_rgba(57,255,20,0.12)]">
-              <img src={IMAGES.dumbbell} alt="Online coaching training session" className="h-[420px] w-full object-cover sm:h-[500px]" />
+              <img src={IMAGES.coachingHero} alt="Sandeep Dangi — online coaching" className="h-[420px] w-full object-cover object-top sm:h-[500px]" />
             </div>
             <div className="absolute -right-4 -top-4 -z-10 h-full w-full border border-flame/40" />
           </motion.div>
