@@ -62,7 +62,7 @@ export default function About() {
             className="relative lg:col-span-5"
           >
             <div className="clip-frame relative overflow-hidden border border-flame/30 shadow-[0_0_70px_rgba(57,255,20,0.12)]" data-testid="about-portrait-frame">
-              <img src={IMAGES.contest} alt="Sandeep Dangi — Men's Physique athlete" className="h-[460px] w-full object-cover sm:h-[540px]" />
+              <img src={IMAGES.about} alt="Sandeep Dangi — Men's Physique athlete" className="h-[460px] w-full object-cover sm:h-[540px]" />
               <div className="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent" />
             </div>
             <div className="absolute -left-4 -top-4 -z-10 h-full w-full border border-volt/40" />
