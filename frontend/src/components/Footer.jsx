@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Instagram, Youtube, Zap } from "lucide-react";
+import { ArrowUpRight, Instagram, Youtube } from "lucide-react";
 import { NAV_LINKS, WA_DEFAULT } from "@/data/content";
 
 export default function Footer() {
@@ -15,12 +15,12 @@ export default function Footer() {
 
         <div className="mt-12 grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center bg-flame">
-                <Zap className="h-4 w-4 text-obsidian" />
-              </span>
-              <span className="font-display text-xl font-extrabold uppercase tracking-wider">SDF</span>
-            </div>
+            <img
+              src="/assets/sdf-logo-white.png"
+              alt="SDF — Sandeep Dangi Fitness"
+              className="h-24 w-24 object-contain"
+              data-testid="footer-logo"
+            />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
               Premium online transformation coaching for busy men and women across India — personalized training, Indian meal plans and weekly accountability.
             </p>
@@ -75,7 +75,7 @@ export default function Footer() {
             Results vary by individual. Coaching provides general fitness and nutrition guidance and is not medical advice. Client photographs are published only with written permission.
           </p>
           <p className="mt-3 font-mono tracking-[0.2em]">
-            © 2026 SANDEEP DANGI FITNESS · INDIA ONLINE TRAINING
+            © 2026 SANDEEP DANGI FITNESS · WHERE DREAMS COME TRUE
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/data/content";
 import { useApply } from "@/context/ApplyContext";
 
@@ -27,15 +27,13 @@ export default function Navbar() {
           scrolled ? "border-b border-white/10 bg-obsidian/85 backdrop-blur-xl" : "bg-transparent"
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-8 lg:px-16">
-          <Link to="/" className="group flex items-center gap-2.5" data-testid="nav-logo">
-            <span className="flex h-9 w-9 items-center justify-center bg-flame shadow-[0_0_18px_rgba(57,255,20,0.45)] transition-colors duration-300 group-hover:bg-white">
-              <Zap className="h-5 w-5 text-obsidian" />
-            </span>
-            <span className="font-display text-2xl font-extrabold uppercase tracking-wider text-white">
-              SDF
-              <span className="ml-1 text-flame">.</span>
-            </span>
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-8 lg:px-16">
+          <Link to="/" className="group flex items-center gap-3" data-testid="nav-logo">
+            <img
+              src="/assets/sdf-logo-white.png"
+              alt="SDF — Sandeep Dangi Fitness"
+              className="h-12 w-12 object-contain drop-shadow-[0_0_14px_rgba(57,255,20,0.25)] transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
           <nav className="hidden items-center gap-7 lg:flex" data-testid="nav-desktop">
@@ -86,6 +84,7 @@ export default function Navbar() {
             className="fixed inset-0 z-40 flex flex-col justify-center bg-obsidian/97 px-8 backdrop-blur-2xl lg:hidden"
             data-testid="mobile-menu"
           >
+            <img src="/assets/sdf-logo-white.png" alt="" className="mb-10 h-24 w-24 object-contain" />
             {NAV_LINKS.map((link, i) => (
               <motion.div
                 key={link.to}

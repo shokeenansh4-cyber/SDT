@@ -6,9 +6,11 @@ export const WA_DEFAULT = waLink(
 );
 
 export const IMAGES = {
-  hero: "https://images.pexels.com/photos/29886673/pexels-photo-29886673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1100&w=820",
+  hero: "/assets/sandeep-hero.webp",
   contest: "https://images.unsplash.com/photo-1610312856669-2cee66b2949c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwxfHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85&w=900&h=1200&fit=crop",
-  coaching: "https://images.unsplash.com/photo-1626724419913-ac60f768c20f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwyfHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85&w=900&h=1100&fit=crop",
+  coaching: "/assets/sandeep-iron.webp",
+  bg: "/assets/sandeep-bg.webp",
+  logo: "/assets/sdf-logo-white.png",
   physique: "https://images.unsplash.com/photo-1754475172820-6053bbed3b25?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHw0fHxtdXNjdWxhciUyMGJvZHlidWlsZGVyJTIwZ3ltJTIwdHJhaW5lciUyMHBvcnRyYWl0JTIwc2hpcnRsZXNzJTIwZml0bmVzcyUyMGF0aGxldGV8ZW58MHx8fHwxNzg5OTczMTI3fDA&ixlib=rb-4.1.0&q=85&w=900&h=1100&fit=crop",
   biceps: "https://images.pexels.com/photos/5327538/pexels-photo-5327538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1000&w=760",
   dumbbell: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHxfHxmaXRuZXNzJTIwdHJhbnNmb3JtYXRpb24lMjBib2R5YnVpbGRlciUyMHdvcmtvdXQlMjBkdW1iYmVsbCUyMGd5bSUyMGVxdWlwbWVudHxlbnwwfHx8fDE3ODk5NzMxMzN8MA&ixlib=rb-4.1.0&q=85&w=900&h=1100&fit=crop",

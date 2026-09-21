@@ -48,6 +48,10 @@ function App() {
       <BrowserRouter>
         <ScrollManager />
         <div className="App bg-obsidian font-body text-slate-100">
+          <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+            <img src="/assets/sandeep-bg.webp" alt="" className="h-full w-full object-cover object-top opacity-[0.16] grayscale-[0.3]" />
+            <div className="absolute inset-0 bg-obsidian/55" />
+          </div>
           <div aria-hidden="true" className="grain-overlay pointer-events-none fixed inset-0 z-[5] opacity-[0.05]" />
           <Navbar />
           <Routes>
