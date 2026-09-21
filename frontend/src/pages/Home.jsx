@@ -19,6 +19,11 @@ const heroItem = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 
+const primaryBtn =
+  "group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:text-obsidian hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]";
+const ghostBtn =
+  "group flex items-center gap-2.5 border border-white/20 px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]";
+
 export default function Home() {
   const { openApply } = useApply();
   const heroRef = useRef(null);
@@ -38,7 +43,7 @@ export default function Home() {
           SDF
         </motion.span>
         <PlateSpinner className="absolute -left-24 top-24 h-72 w-72 text-white/[0.05]" />
-        <PlateSpinner reverse className="absolute -bottom-28 right-[38%] h-96 w-96 text-flame/[0.07]" />
+        <PlateSpinner reverse className="absolute -bottom-28 right-[38%] h-96 w-96 text-flame/[0.08]" />
 
         <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-14 px-4 pb-20 sm:px-8 lg:grid-cols-12 lg:px-16">
           <div className="lg:col-span-7">
@@ -52,7 +57,7 @@ export default function Home() {
             <h1 className="font-display text-5xl font-extrabold uppercase leading-[0.92] tracking-tight text-white sm:text-7xl lg:text-8xl" data-testid="hero-headline">
               <MaskedLine delay={0.15}>Transform</MaskedLine>
               <MaskedLine delay={0.3}>
-                Your <span className="text-flame">Body</span> With
+                Your <span className="text-flame drop-shadow-[0_0_18px_rgba(57,255,20,0.45)]">Body</span> With
               </MaskedLine>
               <MaskedLine delay={0.45}>World-Class</MaskedLine>
               <MaskedLine delay={0.6}>
@@ -67,21 +72,11 @@ export default function Home() {
               </motion.p>
 
               <motion.div variants={heroItem} className="mt-9 flex flex-wrap items-center gap-4">
-                <button
-                  onClick={openApply}
-                  data-testid="hero-apply-btn"
-                  className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
-                >
+                <button onClick={openApply} data-testid="hero-apply-btn" className={primaryBtn}>
                   Apply for Online Coaching
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
                 </button>
-                <a
-                  href={WA_DEFAULT}
-                  target="_blank"
-                  rel="noreferrer"
-                  data-testid="hero-whatsapp-btn"
-                  className="group flex items-center gap-2.5 border border-white/20 px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]"
-                >
+                <a href={WA_DEFAULT} target="_blank" rel="noreferrer" data-testid="hero-whatsapp-btn" className={ghostBtn}>
                   <MessageCircle className="h-5 w-5" />
                   Chat on WhatsApp
                 </a>
@@ -100,15 +95,15 @@ export default function Home() {
             className="relative lg:col-span-5"
           >
             <motion.div style={{ y: imgY }} className="relative">
-              <div className="clip-frame relative overflow-hidden border border-white/10" data-testid="hero-image-frame">
+              <div className="clip-frame relative overflow-hidden border border-flame/30 shadow-[0_0_70px_rgba(57,255,20,0.12)]" data-testid="hero-image-frame">
                 <img
                   src={IMAGES.hero}
                   alt="Coach Sandeep Dangi training"
                   className="h-[420px] w-full object-cover sm:h-[520px]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 flex items-center gap-2 border border-white/15 bg-obsidian/70 px-3 py-2 backdrop-blur-md" data-testid="hero-coach-badge">
-                  <BadgeCheck className="h-4 w-4 text-volt" />
+                <div className="absolute bottom-4 left-4 flex items-center gap-2 border border-flame/30 bg-obsidian/70 px-3 py-2 backdrop-blur-md" data-testid="hero-coach-badge">
+                  <BadgeCheck className="h-4 w-4 text-flame" />
                   <span className="font-mono text-[10px] tracking-[0.25em] text-white">NASM CERTIFIED COACH</span>
                 </div>
               </div>
@@ -139,10 +134,10 @@ export default function Home() {
       <section className="relative overflow-hidden py-24 sm:py-32" data-testid="home-coach-section">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-4 sm:px-8 lg:grid-cols-2 lg:px-16">
           <Reveal className="relative order-2 lg:order-1">
-            <div className="clip-frame-alt overflow-hidden border border-white/10">
+            <div className="clip-frame-alt overflow-hidden border border-white/10 transition-shadow duration-500 hover:shadow-[0_0_60px_rgba(57,255,20,0.12)]">
               <img src={IMAGES.coaching} alt="Sandeep Dangi coaching" className="h-[440px] w-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" />
             </div>
-            <div className="absolute -bottom-5 -left-3 bg-flame px-5 py-3 font-display text-xl font-bold uppercase tracking-widest text-white sm:-left-6" data-testid="coach-exp-badge">
+            <div className="absolute -bottom-5 -left-3 bg-flame px-5 py-3 font-display text-xl font-bold uppercase tracking-widest text-obsidian shadow-[0_0_26px_rgba(57,255,20,0.4)] sm:-left-6" data-testid="coach-exp-badge">
               26 Years of Iron
             </div>
           </Reveal>
@@ -199,7 +194,7 @@ export default function Home() {
               <Link
                 to="/transformations"
                 data-testid="home-all-transformations-link"
-                className="group inline-flex items-center gap-2 bg-white px-6 py-3.5 font-display text-base font-bold uppercase tracking-widest text-obsidian transition-colors duration-300 hover:bg-flame hover:text-white"
+                className="group inline-flex items-center gap-2 bg-white px-6 py-3.5 font-display text-base font-bold uppercase tracking-widest text-obsidian transition-colors duration-300 hover:bg-flame hover:text-obsidian"
               >
                 All Transformations
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -210,7 +205,7 @@ export default function Home() {
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {TRANSFORMATIONS.slice(0, 3).map((t, i) => (
               <Reveal key={t.id} delay={i * 0.12}>
-                <Link to="/transformations" className="group block border border-white/10 bg-obsidian transition-colors duration-300 hover:border-flame/50" data-testid={`home-proof-card-${t.id}`}>
+                <Link to="/transformations" className="group block border border-white/10 bg-obsidian transition-[border-color,box-shadow] duration-300 hover:border-flame/60 hover:shadow-[0_0_45px_rgba(57,255,20,0.12)]" data-testid={`home-proof-card-${t.id}`}>
                   <BeforeAfter before={t.before} after={t.after} id={`home-${t.id}`} />
                   <div className="p-5">
                     <div className="flex items-center justify-between">
@@ -219,7 +214,7 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="mt-2 flex items-center gap-3 font-mono text-xs">
-                      <span className="bg-flame px-2 py-1 font-bold text-white">{t.result}</span>
+                      <span className="bg-flame px-2 py-1 font-bold text-obsidian">{t.result}</span>
                       <span className="text-slate-400">{t.weeks} WEEKS</span>
                     </div>
                   </div>
@@ -249,7 +244,7 @@ export default function Home() {
             {PHILOSOPHY.map((p, i) => (
               <Reveal key={p.num} delay={i * 0.08} className="group bg-obsidian p-7 transition-colors duration-500 hover:bg-steel">
                 <p className="font-mono text-xs tracking-[0.3em] text-flame">{p.num}</p>
-                <Dumbbell className="mt-5 h-6 w-6 text-slate-600 transition-all duration-500 group-hover:rotate-12 group-hover:text-volt" />
+                <Dumbbell className="mt-5 h-6 w-6 text-slate-600 transition-all duration-500 group-hover:rotate-12 group-hover:text-flame group-hover:drop-shadow-[0_0_10px_rgba(57,255,20,0.6)]" />
                 <h3 className="mt-4 font-display text-2xl font-bold uppercase leading-tight tracking-wide text-white">{p.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-400">{p.desc}</p>
               </Reveal>
@@ -268,26 +263,16 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-4 font-display text-5xl font-extrabold uppercase leading-[0.9] tracking-tight text-white sm:text-7xl">
-              Your first rep<br />starts <span className="text-flame">here.</span>
+              Your first rep<br />starts <span className="text-flame drop-shadow-[0_0_18px_rgba(57,255,20,0.45)]">here.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
             <div className="mt-10 flex flex-wrap gap-4">
-              <button
-                onClick={openApply}
-                data-testid="cta-apply-btn"
-                className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
-              >
+              <button onClick={openApply} data-testid="cta-apply-btn" className={primaryBtn}>
                 Apply for Online Coaching
                 <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
               </button>
-              <a
-                href={WA_DEFAULT}
-                target="_blank"
-                rel="noreferrer"
-                data-testid="cta-whatsapp-btn"
-                className="flex items-center gap-2.5 border border-white/20 px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:border-[#25D366] hover:text-[#25D366]"
-              >
+              <a href={WA_DEFAULT} target="_blank" rel="noreferrer" data-testid="cta-whatsapp-btn" className={ghostBtn}>
                 <MessageCircle className="h-5 w-5" />
                 Chat on WhatsApp
               </a>

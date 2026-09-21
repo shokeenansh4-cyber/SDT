@@ -15,6 +15,7 @@ Build a good-looking frontend for the SDF (Sandeep Dangi Fitness) online trainin
 - No backend/database in this phase. Conversions: Apply Now modal (2-step form) → builds prefilled WhatsApp message → wa.me link; floating WhatsApp chat button
 
 ## Implemented (2026-07-21… Phase 1)
+- Rebrand + UI upgrade (2026-07-21): palette switched to black + neon green (#39FF14 primary, #A3FF5E soft-green accents) with neon glow on CTAs, badges, filters, cards and image frames; before/after comparison slider removed — now a static split view with a fixed glowing divider (no draggable bar)
 - Responsive pass (2026-07-21): fixed mobile horizontal overflow (clipped at root + overflow guards on decorative sections), verified at 390px phone and 768px tablet — mobile hamburger menu, stacked layouts, apply modal and sliders all work on touch sizes
 - Multi-page routing: Home, Transformations, Online Coaching, Contest Prep, About Sandeep
 - Home: kinetic masked-line hero (headline from PDF), Apply + WhatsApp CTAs, EN/हिंदी/ਪੰਜਾਬੀ language badges, trust strip with animated counters (26+ yrs, 5,000+ transformations, NASM, Canadian titles), marquee, numbered chapters (The Coach / The Proof / The Method), philosophy grid, CTA band

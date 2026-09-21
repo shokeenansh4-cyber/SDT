@@ -41,7 +41,7 @@ export default function ContestPrep() {
                 <button
                   onClick={openApply}
                   data-testid="contest-apply-btn"
-                  className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+                  className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:text-obsidian hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]"
                 >
                   Apply for Contest Prep
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
@@ -119,7 +119,7 @@ export default function ContestPrep() {
               <button
                 onClick={openApply}
                 data-testid="contest-cta-apply-btn"
-                className="mt-9 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+                className="mt-9 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:text-obsidian hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]"
               >
                 Start Your Prep
               </button>

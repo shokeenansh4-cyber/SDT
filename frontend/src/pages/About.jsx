@@ -46,7 +46,7 @@ export default function About() {
             <h1 className="mt-6 font-display text-5xl font-extrabold uppercase leading-[0.92] tracking-tight text-white sm:text-7xl" data-testid="about-headline">
               <MaskedLine delay={0.1}>The man behind</MaskedLine>
               <MaskedLine delay={0.25}>
-                <span className="text-flame">5,000+</span> transformations
+                <span className="text-flame drop-shadow-[0_0_18px_rgba(57,255,20,0.45)]">5,000+</span> transformations
               </MaskedLine>
             </h1>
             <Reveal delay={0.4}>
@@ -61,12 +61,12 @@ export default function About() {
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="relative lg:col-span-5"
           >
-            <div className="clip-frame relative overflow-hidden border border-white/10" data-testid="about-portrait-frame">
+            <div className="clip-frame relative overflow-hidden border border-flame/30 shadow-[0_0_70px_rgba(57,255,20,0.12)]" data-testid="about-portrait-frame">
               <img src={IMAGES.contest} alt="Sandeep Dangi — Men's Physique athlete" className="h-[460px] w-full object-cover sm:h-[540px]" />
               <div className="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent" />
             </div>
             <div className="absolute -left-4 -top-4 -z-10 h-full w-full border border-volt/40" />
-            <div className="absolute -bottom-5 right-4 bg-flame px-5 py-3 font-display text-lg font-bold uppercase tracking-widest text-white" data-testid="about-title-badge">
+            <div className="absolute -bottom-5 right-4 bg-flame px-5 py-3 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_26px_rgba(57,255,20,0.4)]" data-testid="about-title-badge">
               Canadian Bodybuilding Titles
             </div>
           </motion.div>
@@ -81,10 +81,10 @@ export default function About() {
           <Reveal><ChapterTag num="05" label="The Story" /></Reveal>
           <div className="mt-12 grid gap-px border border-white/10 bg-white/10 md:grid-cols-2">
             {CHAPTERS.map((c, i) => (
-              <Reveal key={c.num} delay={i * 0.08} className="group bg-obsidian p-8 transition-colors duration-500 hover:bg-steel sm:p-10">
+              <Reveal key={c.num} delay={i * 0.08} className="group bg-obsidian p-8 transition-[background-color,box-shadow] duration-500 hover:bg-steel hover:shadow-[inset_0_0_50px_rgba(57,255,20,0.05)] sm:p-10">
                 <div className="flex items-center justify-between">
                   <p className="font-mono text-xs tracking-[0.35em] text-flame">CHAPTER {c.num}</p>
-                  <c.icon className="h-6 w-6 text-slate-600 transition-all duration-500 group-hover:-rotate-12 group-hover:text-volt" />
+                  <c.icon className="h-6 w-6 text-slate-600 transition-all duration-500 group-hover:-rotate-12 group-hover:text-flame group-hover:drop-shadow-[0_0_10px_rgba(57,255,20,0.6)]" />
                 </div>
                 <h2 className="mt-6 font-display text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl" data-testid={`about-chapter-${c.num}`}>
                   {c.title}
@@ -115,7 +115,7 @@ export default function About() {
                 <button
                   onClick={openApply}
                   data-testid="about-apply-btn"
-                  className="group mt-9 flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+                  className="group mt-9 flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]"
                 >
                   Train With Sandeep
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />

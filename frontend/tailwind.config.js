@@ -17,9 +17,9 @@ module.exports = {
         obsidian: '#07090E',
         carbon: '#0F141C',
         steel: '#171F2C',
-        flame: '#FF3838',
-        'flame-dark': '#E62E2E',
-        volt: '#FF9F1C',
+        flame: '#39FF14',
+        'flame-dark': '#23D100',
+        volt: '#A3FF5E',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {

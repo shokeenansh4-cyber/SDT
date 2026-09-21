@@ -18,7 +18,7 @@ export default function Coaching() {
   return (
     <main data-testid="coaching-page">
       <section className="relative overflow-hidden pb-20 pt-36 sm:pt-44">
-        <PlateSpinner reverse className="absolute -right-24 top-24 h-96 w-96 text-flame/[0.06]" />
+        <PlateSpinner reverse className="absolute -right-24 top-24 h-96 w-96 text-flame/[0.07]" />
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-14 px-4 sm:px-8 lg:grid-cols-12 lg:px-16">
           <div className="lg:col-span-7">
             <ChapterTag num="03" label="Online Coaching" />
@@ -38,7 +38,7 @@ export default function Coaching() {
                 <button
                   onClick={openApply}
                   data-testid="coaching-apply-btn"
-                  className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+                  className="group flex items-center gap-2.5 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]"
                 >
                   Apply for Online Coaching
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1.5" />
@@ -62,7 +62,7 @@ export default function Coaching() {
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="relative lg:col-span-5"
           >
-            <div className="clip-frame-alt overflow-hidden border border-white/10">
+            <div className="clip-frame-alt overflow-hidden border border-white/10 transition-shadow duration-500 hover:shadow-[0_0_60px_rgba(57,255,20,0.12)]">
               <img src={IMAGES.dumbbell} alt="Online coaching training session" className="h-[420px] w-full object-cover sm:h-[500px]" />
             </div>
             <div className="absolute -right-4 -top-4 -z-10 h-full w-full border border-flame/40" />
@@ -76,7 +76,7 @@ export default function Coaching() {
           <div className="mt-12 grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
             {PILLARS.map((p, i) => (
               <Reveal key={p.title} delay={i * 0.08} className="group bg-carbon p-7 transition-colors duration-500 hover:bg-steel">
-                <p.icon className="h-7 w-7 text-flame transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110" />
+                <p.icon className="h-7 w-7 text-flame transition-all duration-500 group-hover:-rotate-12 group-hover:scale-110 group-hover:drop-shadow-[0_0_12px_rgba(57,255,20,0.6)]" />
                 <h3 className="mt-5 font-display text-2xl font-bold uppercase leading-tight tracking-wide text-white">{p.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-slate-400">{p.desc}</p>
               </Reveal>
@@ -92,7 +92,7 @@ export default function Coaching() {
               <Reveal><ChapterTag num="03.2" label="Programs" /></Reveal>
               <Reveal delay={0.1}>
                 <h2 className="mt-5 font-display text-4xl font-extrabold uppercase leading-[0.95] tracking-tight text-white sm:text-6xl">
-                  Pick your<br /><span className="text-flame">commitment.</span>
+                  Pick your<br /><span className="text-flame drop-shadow-[0_0_18px_rgba(57,255,20,0.45)]">commitment.</span>
                 </h2>
               </Reveal>
             </div>
@@ -107,13 +107,15 @@ export default function Coaching() {
             {PROGRAMS.map((p, i) => (
               <Reveal key={p.num} delay={i * 0.1}>
                 <div
-                  className={`group relative flex h-full flex-col border p-8 transition-colors duration-500 ${
-                    p.featured ? "border-flame/60 bg-steel" : "border-white/10 bg-carbon hover:border-volt/50"
+                  className={`group relative flex h-full flex-col border p-8 transition-[border-color,box-shadow] duration-500 ${
+                    p.featured
+                      ? "border-flame/70 bg-steel shadow-[0_0_70px_rgba(57,255,20,0.14)]"
+                      : "border-white/10 bg-carbon hover:border-flame/40 hover:shadow-[0_0_45px_rgba(57,255,20,0.1)]"
                   }`}
                   data-testid={`program-card-${p.num.toLowerCase()}`}
                 >
                   {p.featured && (
-                    <span className="absolute -top-3 left-8 bg-flame px-3 py-1 font-mono text-[10px] font-bold tracking-[0.25em] text-white">
+                    <span className="absolute -top-3 left-8 bg-flame px-3 py-1 font-mono text-[10px] font-bold tracking-[0.25em] text-obsidian shadow-[0_0_18px_rgba(57,255,20,0.45)]">
                       MOST POPULAR
                     </span>
                   )}
@@ -136,7 +138,7 @@ export default function Coaching() {
                     data-testid={`program-apply-${p.num.toLowerCase()}`}
                     className={`mt-8 flex items-center justify-center gap-2 py-3.5 font-display text-base font-bold uppercase tracking-widest transition-colors duration-300 ${
                       p.featured
-                        ? "bg-flame text-white hover:bg-volt hover:text-obsidian"
+                        ? "bg-flame text-obsidian shadow-[0_0_22px_rgba(57,255,20,0.3)] hover:bg-white"
                         : "border border-white/20 text-white hover:border-flame hover:text-flame"
                     }`}
                   >
@@ -153,8 +155,8 @@ export default function Coaching() {
       <section className="relative overflow-hidden border-t border-white/10 bg-carbon py-20" data-testid="coaching-meals-section">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-8 lg:grid-cols-2 lg:px-16">
           <Reveal className="grid grid-cols-2 gap-4">
-            <img src={IMAGES.meal1} alt="Indian meal prep" className="h-56 w-full border border-white/10 object-cover sm:h-72" loading="lazy" />
-            <img src={IMAGES.meal2} alt="Structured Indian nutrition plan" className="mt-8 h-56 w-full border border-white/10 object-cover sm:h-72" loading="lazy" />
+            <img src={IMAGES.meal1} alt="Indian meal prep" className="h-56 w-full border border-white/10 object-cover transition-shadow duration-500 hover:shadow-[0_0_40px_rgba(57,255,20,0.15)] sm:h-72" loading="lazy" />
+            <img src={IMAGES.meal2} alt="Structured Indian nutrition plan" className="mt-8 h-56 w-full border border-white/10 object-cover transition-shadow duration-500 hover:shadow-[0_0_40px_rgba(57,255,20,0.15)] sm:h-72" loading="lazy" />
           </Reveal>
           <div>
             <Reveal><ChapterTag num="03.3" label="Nutrition, The Indian Way" /></Reveal>

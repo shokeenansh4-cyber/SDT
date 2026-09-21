@@ -11,6 +11,9 @@ const READINESS = ["Ready to start now", "Within 2–4 weeks", "Just exploring"]
 
 const initialForm = { name: "", age: "", city: "", whatsapp: "", goal: "", challenge: "", program: "", readiness: "" };
 
+const inputCls =
+  "w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none focus:shadow-[0_0_18px_rgba(57,255,20,0.15)]";
+
 export default function ApplyModal() {
   const { open, closeApply } = useApply();
   const [step, setStep] = useState(0);
@@ -39,8 +42,8 @@ export default function ApplyModal() {
           data-testid={`${testPrefix}-${opt.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
           className={`border px-4 py-2 font-mono text-xs tracking-wider transition-colors duration-300 ${
             form[key] === opt
-              ? "border-flame bg-flame text-white"
-              : "border-white/15 text-slate-300 hover:border-volt hover:text-volt"
+              ? "border-flame bg-flame text-obsidian shadow-[0_0_16px_rgba(57,255,20,0.35)]"
+              : "border-white/15 text-slate-300 hover:border-flame/60 hover:text-flame"
           }`}
         >
           {opt}
@@ -66,7 +69,7 @@ export default function ApplyModal() {
             exit={{ opacity: 0, y: 40, scale: 0.97 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-lg border border-white/10 bg-carbon p-6 shadow-2xl sm:p-9"
+            className="relative max-h-[90vh] w-full max-w-lg overflow-y-auto border border-flame/25 bg-carbon p-6 shadow-[0_0_80px_rgba(57,255,20,0.12)] sm:p-9"
           >
             <button
               onClick={closeApply}
@@ -89,7 +92,7 @@ export default function ApplyModal() {
                   onChange={(e) => set("name", e.target.value)}
                   placeholder="Full name"
                   data-testid="apply-name-input"
-                  className="w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none"
+                  className={inputCls}
                 />
                 <div className="grid grid-cols-2 gap-4">
                   <input
@@ -98,14 +101,14 @@ export default function ApplyModal() {
                     placeholder="Age"
                     inputMode="numeric"
                     data-testid="apply-age-input"
-                    className="w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none"
+                    className={inputCls}
                   />
                   <input
                     value={form.city}
                     onChange={(e) => set("city", e.target.value)}
                     placeholder="City"
                     data-testid="apply-city-input"
-                    className="w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none"
+                    className={inputCls}
                   />
                 </div>
                 <input
@@ -114,13 +117,13 @@ export default function ApplyModal() {
                   placeholder="WhatsApp number"
                   inputMode="tel"
                   data-testid="apply-whatsapp-input"
-                  className="w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none"
+                  className={inputCls}
                 />
                 <button
                   onClick={() => setStep(1)}
                   disabled={!stepOneValid}
                   data-testid="apply-next-btn"
-                  className="flex w-full items-center justify-center gap-2 bg-flame py-3.5 font-display text-base font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian disabled:cursor-not-allowed disabled:opacity-40"
+                  className="flex w-full items-center justify-center gap-2 bg-flame py-3.5 font-display text-base font-bold uppercase tracking-widest text-obsidian shadow-[0_0_22px_rgba(57,255,20,0.3)] transition-colors duration-300 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40"
                 >
                   Continue
                   <ArrowRight className="h-4 w-4" />
@@ -145,7 +148,7 @@ export default function ApplyModal() {
                   onChange={(e) => set("challenge", e.target.value)}
                   placeholder="Biggest challenge (optional)"
                   data-testid="apply-challenge-input"
-                  className="w-full border border-white/15 bg-obsidian px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:border-flame focus:outline-none"
+                  className={inputCls}
                 />
                 <div className="flex gap-3">
                   <button
@@ -160,7 +163,7 @@ export default function ApplyModal() {
                     onClick={submit}
                     disabled={!stepTwoValid}
                     data-testid="apply-submit-btn"
-                    className="flex flex-1 items-center justify-center gap-2 bg-flame py-3.5 font-display text-base font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-[#25D366] hover:text-obsidian disabled:cursor-not-allowed disabled:opacity-40"
+                    className="flex flex-1 items-center justify-center gap-2 bg-flame py-3.5 font-display text-base font-bold uppercase tracking-widest text-obsidian shadow-[0_0_22px_rgba(57,255,20,0.3)] transition-colors duration-300 hover:bg-white disabled:cursor-not-allowed disabled:opacity-40"
                   >
                     Send via WhatsApp
                     <ArrowRight className="h-4 w-4" />

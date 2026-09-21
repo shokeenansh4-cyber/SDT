@@ -29,8 +29,8 @@ export default function Navbar() {
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-8 lg:px-16">
           <Link to="/" className="group flex items-center gap-2.5" data-testid="nav-logo">
-            <span className="flex h-9 w-9 items-center justify-center bg-flame transition-colors duration-300 group-hover:bg-volt">
-              <Zap className="h-5 w-5 text-white transition-colors duration-300 group-hover:text-obsidian" />
+            <span className="flex h-9 w-9 items-center justify-center bg-flame shadow-[0_0_18px_rgba(57,255,20,0.45)] transition-colors duration-300 group-hover:bg-white">
+              <Zap className="h-5 w-5 text-obsidian" />
             </span>
             <span className="font-display text-2xl font-extrabold uppercase tracking-wider text-white">
               SDF
@@ -59,7 +59,7 @@ export default function Navbar() {
             <button
               onClick={openApply}
               data-testid="apply-now-nav-btn"
-              className="bg-flame px-5 py-2.5 font-display text-sm font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+              className="bg-flame px-5 py-2.5 font-display text-sm font-bold uppercase tracking-widest text-obsidian shadow-[0_0_20px_rgba(57,255,20,0.35)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_0_32px_rgba(57,255,20,0.55)]"
             >
               Apply Now
             </button>
@@ -112,7 +112,7 @@ export default function Navbar() {
               transition={{ delay: 0.35 }}
               onClick={() => { setMobileOpen(false); openApply(); }}
               data-testid="apply-now-mobile-btn"
-              className="mt-8 bg-flame py-4 font-display text-xl font-bold uppercase tracking-widest text-white"
+              className="mt-8 bg-flame py-4 font-display text-xl font-bold uppercase tracking-widest text-obsidian shadow-[0_0_24px_rgba(57,255,20,0.4)]"
             >
               Apply Now
             </motion.button>

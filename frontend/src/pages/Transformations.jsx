@@ -15,7 +15,7 @@ export default function Transformations() {
   return (
     <main data-testid="transformations-page">
       <section className="relative overflow-hidden pb-16 pt-36 sm:pt-44">
-        <PlateSpinner className="absolute -right-24 top-16 h-80 w-80 text-flame/[0.06]" />
+        <PlateSpinner className="absolute -right-24 top-16 h-80 w-80 text-flame/[0.07]" />
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-16">
           <ChapterTag num="02" label="Proof, Not Promises" />
           <h1 className="mt-6 font-display text-5xl font-extrabold uppercase leading-[0.92] tracking-tight text-white sm:text-7xl" data-testid="transformations-headline">
@@ -26,7 +26,7 @@ export default function Transformations() {
           </h1>
           <Reveal delay={0.35}>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              Every case study shows the time taken, the measurable outcome and exactly what changed in training, nutrition and accountability. Drag the slider on each photo.
+              Every case study shows the time taken, the measurable outcome and exactly what changed in training, nutrition and accountability.
             </p>
           </Reveal>
           <Reveal delay={0.45}>
@@ -47,8 +47,8 @@ export default function Transformations() {
               data-testid={`filter-${f.id}`}
               className={`border px-5 py-2.5 font-mono text-xs uppercase tracking-[0.2em] transition-colors duration-300 ${
                 filter === f.id
-                  ? "border-flame bg-flame text-white"
-                  : "border-white/15 text-slate-400 hover:border-volt hover:text-volt"
+                  ? "border-flame bg-flame text-obsidian shadow-[0_0_20px_rgba(57,255,20,0.35)]"
+                  : "border-white/15 text-slate-400 hover:border-flame/60 hover:text-flame"
               }`}
             >
               {f.label}
@@ -68,7 +68,7 @@ export default function Transformations() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.5, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
-                className="border border-white/10 bg-obsidian"
+                className="border border-white/10 bg-obsidian transition-[border-color,box-shadow] duration-500 hover:border-flame/40 hover:shadow-[0_0_50px_rgba(57,255,20,0.1)]"
                 data-testid={`transformation-card-${t.id}`}
               >
                 <BeforeAfter before={t.before} after={t.after} id={t.id} />
@@ -78,7 +78,7 @@ export default function Transformations() {
                       {t.name}, {t.age} · {t.city}
                     </h2>
                     <div className="flex items-center gap-2 font-mono text-xs">
-                      <span className="bg-flame px-2.5 py-1 font-bold text-white" data-testid={`result-${t.id}`}>{t.result}</span>
+                      <span className="bg-flame px-2.5 py-1 font-bold text-obsidian" data-testid={`result-${t.id}`}>{t.result}</span>
                       <span className="border border-white/15 px-2.5 py-1 text-slate-400">{t.weeks} WEEKS</span>
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function Transformations() {
         </div>
 
         <Reveal className="mx-auto mt-20 max-w-7xl px-4 sm:px-8 lg:px-16">
-          <div className="flex flex-col items-start justify-between gap-6 border border-flame/30 bg-flame/5 p-8 sm:flex-row sm:items-center sm:p-10" data-testid="transformations-cta">
+          <div className="flex flex-col items-start justify-between gap-6 border border-flame/30 bg-flame/5 p-8 shadow-[0_0_60px_rgba(57,255,20,0.08)] sm:flex-row sm:items-center sm:p-10" data-testid="transformations-cta">
             <div>
               <p className="font-display text-3xl font-extrabold uppercase tracking-tight text-white sm:text-4xl">
                 Your photo could be next.
@@ -122,7 +122,7 @@ export default function Transformations() {
             <button
               onClick={openApply}
               data-testid="transformations-apply-btn"
-              className="shrink-0 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-white transition-colors duration-300 hover:bg-volt hover:text-obsidian"
+              className="shrink-0 bg-flame px-8 py-4 font-display text-lg font-bold uppercase tracking-widest text-obsidian shadow-[0_0_28px_rgba(57,255,20,0.3)] transition-[background-color,box-shadow] duration-300 hover:bg-white hover:shadow-[0_0_44px_rgba(57,255,20,0.5)]"
             >
               Apply Now
             </button>
