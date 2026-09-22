@@ -26,7 +26,7 @@ export default function Transformations() {
           </h1>
           <Reveal delay={0.35}>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
-              Every case study shows the time taken, the measurable outcome and exactly what changed in training, nutrition and accountability.
+              Every case study shows the time taken, the measurable outcome and exactly what changed in training, nutrition and accountability. Drag the neon handle on each photo to compare.
             </p>
           </Reveal>
           <Reveal delay={0.45}>
