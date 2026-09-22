@@ -60,7 +60,7 @@ export default function ContestPrep() {
             className="relative lg:col-span-5"
           >
             <div className="clip-frame overflow-hidden border border-white/10">
-              <img src={IMAGES.physique} alt="Men's Physique athlete stage conditioning" className="h-[440px] w-full object-cover sm:h-[520px]" />
+              <img src={IMAGES.contestPrep} alt="Sandeep Dangi with his medals at an IFBB Pro Qualifier" className="h-[440px] w-full object-cover sm:h-[520px]" />
               <div className="absolute inset-0 bg-gradient-to-t from-obsidian/70 via-transparent to-transparent" />
             </div>
             <div className="absolute -left-4 -top-4 -z-10 h-full w-full border border-flame/40" />
