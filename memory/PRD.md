@@ -3,6 +3,8 @@
 ## Original Problem Statement
 Build a good-looking frontend for the SDF (Sandeep Dangi Fitness) online training website, working point-by-point through the client's PDF work plan. Phase 1 covers **Point 1 (The Website's Main Job — hero, positioning, conversions, navigation)** and **Point 2 (Proof, Story and Transformations — credibility, case studies, About Sandeep)** of the PDF. User choices: multipage site, aesthetic professional trainer look with strong UI, good animations + gym-equipment related animations, sample photos for now (real photos of Sandeep / clients to be supplied later), WhatsApp number to be added later (placeholder in use).
 
+- Marquee trimmed + Netlify-ready (2026-07-23): removed ENGLISH/हिंदी/ਪੰਜਾਬੀ items from the scrolling ticker (languages still shown in navbar badge, hero line and footer); added /app/netlify.toml (base=frontend, `yarn build`, publish=build, CI=false, Node 20) + public/_redirects SPA fallback; production build verified compiling with all real photos bundled. Deploy: connect repo to Netlify (auto-reads netlify.toml) or drag-drop frontend/build to app.netlify.com/drop
+
 ## User Personas
 - Busy Indian men & women 35+ wanting structure, accountability and Indian-food nutrition (primary market)
 - Serious transformation clients considering premium 12-week coaching

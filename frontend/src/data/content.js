@@ -37,9 +37,6 @@ export const MARQUEE_ITEMS = [
   "5,000+ TRANSFORMATIONS",
   "NASM CERTIFIED",
   "CANADIAN BODYBUILDING TITLES",
-  "ENGLISH",
-  "हिंदी",
-  "ਪੰਜਾਬੀ",
 ];
 
 export const STATS = [
