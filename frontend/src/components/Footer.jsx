@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Instagram, Youtube } from "lucide-react";
+import { ArrowUpRight, Instagram } from "lucide-react";
 import { NAV_LINKS, WA_DEFAULT } from "@/data/content";
 
 export default function Footer() {
@@ -60,11 +60,8 @@ export default function Footer() {
               <ArrowUpRight className="h-4 w-4" />
             </a>
             <div className="mt-6 flex gap-3">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram" data-testid="footer-instagram-link" className="flex h-10 w-10 items-center justify-center border border-white/15 text-slate-400 transition-colors duration-300 hover:border-flame hover:text-flame">
+              <a href="https://www.instagram.com/sandeep_dangi15/" target="_blank" rel="noreferrer" aria-label="Instagram" data-testid="footer-instagram-link" className="flex h-10 w-10 items-center justify-center border border-white/15 text-slate-400 transition-colors duration-300 hover:border-flame hover:text-flame">
                 <Instagram className="h-4 w-4" />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube" data-testid="footer-youtube-link" className="flex h-10 w-10 items-center justify-center border border-white/15 text-slate-400 transition-colors duration-300 hover:border-flame hover:text-flame">
-                <Youtube className="h-4 w-4" />
               </a>
             </div>
           </div>
