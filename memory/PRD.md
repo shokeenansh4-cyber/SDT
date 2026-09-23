@@ -7,7 +7,7 @@ Build a good-looking frontend for the SDF (Sandeep Dangi Fitness) online trainin
 
 - Bug fix (2026-07-23): Home-page before/after sliders were unswipeable because the cards were wrapped in a Link to /transformations, which intercepted the drag; cards are now plain containers — sliders respond to drag on Home without navigating away (verified via browser automation: handle moves, URL stays on home)
 
-- Contact links live (2026-07-23): real WhatsApp number (236) 332-3621 wired into every CTA (hero, CTA band, footer, floating chat, apply-modal submit all open wa.me/2363323621); footer Instagram now links to instagram.com/sandeep_dangi15; YouTube link removed
+- Contact links live (2026-07-23): real WhatsApp number +1 (236) 332-3621 (US country code — wa.me/12363323621) wired into every CTA (hero, CTA band, footer, floating chat, apply-modal submit); footer Instagram now links to instagram.com/sandeep_dangi15; YouTube link removed
 
 ## User Personas
 - Busy Indian men & women 35+ wanting structure, accountability and Indian-food nutrition (primary market)
