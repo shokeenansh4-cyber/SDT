@@ -5,6 +5,8 @@ Build a good-looking frontend for the SDF (Sandeep Dangi Fitness) online trainin
 
 - Marquee trimmed + Netlify-ready (2026-07-23): removed ENGLISH/हिंदी/ਪੰਜਾਬੀ items from the scrolling ticker (languages still shown in navbar badge, hero line and footer); added /app/netlify.toml (base=frontend, `yarn build`, publish=build, CI=false, Node 20) + public/_redirects SPA fallback; production build verified compiling with all real photos bundled. Deploy: connect repo to Netlify (auto-reads netlify.toml) or drag-drop frontend/build to app.netlify.com/drop
 
+- Bug fix (2026-07-23): Home-page before/after sliders were unswipeable because the cards were wrapped in a Link to /transformations, which intercepted the drag; cards are now plain containers — sliders respond to drag on Home without navigating away (verified via browser automation: handle moves, URL stays on home)
+
 ## User Personas
 - Busy Indian men & women 35+ wanting structure, accountability and Indian-food nutrition (primary market)
 - Serious transformation clients considering premium 12-week coaching

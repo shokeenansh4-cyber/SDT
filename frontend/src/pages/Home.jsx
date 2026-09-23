@@ -205,7 +205,7 @@ export default function Home() {
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {TRANSFORMATIONS.slice(0, 3).map((t, i) => (
               <Reveal key={t.id} delay={i * 0.12}>
-                <Link to="/transformations" className="group block border border-white/10 bg-obsidian transition-[border-color,box-shadow] duration-300 hover:border-flame/60 hover:shadow-[0_0_45px_rgba(57,255,20,0.12)]" data-testid={`home-proof-card-${t.id}`}>
+                <div className="group border border-white/10 bg-obsidian transition-[border-color,box-shadow] duration-300 hover:border-flame/60 hover:shadow-[0_0_45px_rgba(57,255,20,0.12)]" data-testid={`home-proof-card-${t.id}`}>
                   <BeforeAfter before={t.before} after={t.after} id={`home-${t.id}`} />
                   <div className="p-5">
                     <div className="flex items-center justify-between">
@@ -218,7 +218,7 @@ export default function Home() {
                       <span className="text-slate-400">{t.weeks} WEEKS</span>
                     </div>
                   </div>
-                </Link>
+                </div>
               </Reveal>
             ))}
           </div>
